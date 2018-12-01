@@ -6,9 +6,12 @@ import './components/styles/styles.css';
 class App extends Component{
     render (){
         return (
-            <div class="main-app">
-                <Map />
-                <Form/>
+            <div>
+                <div className="header">HEADER</div>
+                <div className="main-app">
+                    <Map />
+                    <Form/>
+                </div>
             </div>
         )
     }

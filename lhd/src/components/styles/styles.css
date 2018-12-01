@@ -22,8 +22,17 @@ body{
     border-radius: 6px 6px;
 }
 
+.header {
+    height: 10vh;
+}
+
 .form-container {
     width: 20%;
+}
+
+.map-container {
+    height: 85vh;
+    width: 80%;
 }
 
 .buttons-form > div{
