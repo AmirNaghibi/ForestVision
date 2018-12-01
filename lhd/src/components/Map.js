@@ -32,7 +32,7 @@ class Map extends Component {
                                 }))
                         });
                         heatmap.setMap(map);
-                        heatmap.set('radius', 20);
+                        heatmap.set('radius', 30);
                     }}
                 >
                     <AnyReactComponent

@@ -37,7 +37,7 @@ class Form extends Component {
 
     render (){
         return (
-            <div>
+            <div className="form-container">
                 {this.renderForm()}
             </div>
         )

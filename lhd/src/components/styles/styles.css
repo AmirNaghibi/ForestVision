@@ -15,17 +15,26 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce0332', endColorstr='#80001e', GradientType=1 );
 
     position: relative;
-    width: 20%;
     float: right;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     border: 2px solid black;
     border-radius: 6px 6px;
 }
 
+.form-container {
+    width: 20%;
+}
+
 .buttons-form > div{
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: center;
     align-items: center;
+}
+
+.main-app {
+    display:flex;
+    flex-direction:row;
 }

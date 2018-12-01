@@ -7,9 +7,9 @@ class App extends Component{
 
     render (){
         return (
-            <div>
+            <div class="main-app">
+                <Map />
                 <Form/>
-                <Map/>
             </div>
         )
     }
