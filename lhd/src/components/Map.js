@@ -21,7 +21,7 @@ class Map extends Component {
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: 'PASTE_YOUR_API_KEY', libraries: 'visualization' }}
                     defaultCenter={this.props.center}
-                    defaultZoom={this.progps.zoom}
+                    defaultZoom={this.props.zoom}
                     yesIWantToUseGoogleMapApiInternals
                     onGoogleApiLoaded={({map, maps}) => {
                         console.log(points[0]);
@@ -32,7 +32,7 @@ class Map extends Component {
                                 }))
                         });
                         heatmap.setMap(map);
-                        heatmap.set('radius', 20);
+                        heatmap.set('radius', 30);
                     }}
                 >
                     <AnyReactComponent
