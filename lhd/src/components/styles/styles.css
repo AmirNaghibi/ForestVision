@@ -23,9 +23,9 @@ body{
 }
 
 .buttons-form > div{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-content: space-between; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex; 
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
