@@ -1,1 +1,1 @@
-# LHD
+# Local Hack Day Code repo
