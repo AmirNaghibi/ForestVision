@@ -3,15 +3,6 @@ import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 
-const styles = theme => ({
-  fab: {
-    margin: theme.spacing.unit,
-  },
-  extendedIcon: {
-    marginRight: theme.spacing.unit,
-  },
-});
-
 class Form extends Component {
 
     constructor(props){
@@ -23,7 +14,6 @@ class Form extends Component {
     }
 
     renderForm(){
-        const {classes} = this.props;
         return (
             <div className="form">
                 <form className="buttons-form">

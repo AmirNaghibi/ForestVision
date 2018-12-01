@@ -4,11 +4,12 @@ import Map from './components/Map';
 import './components/styles/styles.css';
 
 class App extends Component{
+
     render (){
         return (
             <div>
                 <Form/>
-                <Map />
+                <Map/>
             </div>
         )
     }
