@@ -17,18 +17,18 @@ class Form extends Component {
         return (
             <div className="form">
                 <form className="buttons-form">
-                    <div>
-                    <Fab variant="extended" aria-label="Delete" >
-                        <NavigationIcon/>
-                        Share Location
-                    </Fab>
+                    <div className="button-container-left">
+                        <Fab variant="extended" aria-label="Delete" >
+                            <NavigationIcon/>
+                            Share Location
+                        </Fab>
                     </div>
 
-                    <div>
-                    <Fab variant="extended" aria-label="Delete" >
-                        <CloudUploadIcon/>
-                        Upload Images
-                    </Fab>
+                    <div className="button-container-right">
+                        <Fab variant="extended" aria-label="Delete" >
+                            <CloudUploadIcon/>
+                            Upload Images
+                        </Fab>
                     </div>
                 </form>
             </div>
