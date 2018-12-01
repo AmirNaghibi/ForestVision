@@ -1,22 +1,9 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import points from '../points';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-const points = [
-    {
-        location: [49.2606, -123.2455],
-        weight: 20
-    },
-    {
-        location: [49.2610, -123.2461],
-        weight: 30
-    },
-    {
-        location: [49.2608, -123.2460],
-        weight: 10
-    },
-];
 
 class Map extends Component {
     static defaultProps = {
@@ -39,11 +26,13 @@ class Map extends Component {
                     onGoogleApiLoaded={({map, maps}) => {
                         console.log(points[0]);
                         const heatmap = new maps.visualization.HeatmapLayer({
-                            data: points.map(point => (
-                                {location: new maps.LatLng(point['location'][0], point['location'][1]),
-                                    weight: point['weight']}))
+                            data: points.map(point => ({
+                                    location: new maps.LatLng(point['location'][0], point['location'][1]),
+                                    weight: point['weight'],
+                                }))
                         });
                         heatmap.setMap(map);
+                        heatmap.set('radius', 20);
                     }}
                 >
                     <AnyReactComponent
