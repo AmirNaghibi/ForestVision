@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import {toggleForm } from '../action/formAction';
+
+import {connect} from 'react-redux';
 
 class Form extends Component {
 
@@ -25,7 +28,7 @@ class Form extends Component {
                     </div>
 
                     <div>
-                    <Fab variant="extended" aria-label="Delete" >
+                    <Fab variant="extended" aria-label="Delete" onClick={() => this.props.toggleForm()}>
                         <CloudUploadIcon/>
                         Upload Images
                     </Fab>
@@ -44,4 +47,12 @@ class Form extends Component {
     }
 }
 
-export default Form;
+const mapDispatchToProps = dispatch => {
+    return {
+        toggleForm: () => {
+            dispatch(toggleForm())
+        }
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Form);
