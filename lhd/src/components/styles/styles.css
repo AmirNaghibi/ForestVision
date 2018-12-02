@@ -22,8 +22,17 @@ body{
     border-radius: 6px 6px;
 }
 
+.header {
+    height: 10vh;
+}
+
 .form-container {
     width: 20%;
+}
+
+.map-container {
+    height: 85vh;
+    width: 80%;
 }
 
 .buttons-form > div{
@@ -53,3 +62,18 @@ body{
   .image-drop-div{
       margin: 20px auto;
   }
+.button-container-right {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    padding: 10px;
+}
+
+.button-container-left {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    padding: 10px;
+}

@@ -8,10 +8,16 @@ class App extends Component{
 
     render (){
         return (
-            <div class="main-app">
-                <Map />
-                <Form/>
-                <Modal/>
+            <div>
+            <div className="header ">
+                HEADER
+
+            </div>
+                <div className="main-app">
+                    <Map />
+                    <Form/>
+                    <Modal/>
+            </div>
             </div>
         )
     }
