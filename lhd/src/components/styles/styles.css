@@ -50,3 +50,6 @@ body{
     box-shadow: 2px 2px 2px #6b0a3a;
   }
 
+  .image-drop-div{
+      margin: 20px auto;
+  }
