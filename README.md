@@ -1,5 +1,8 @@
 # Forest Vision
 
+
+
+
 ### Inspiration
 
 Every year, there are thousands of wildfires around the world resulting billions of dollars in damages to the communities impacted by this natural disaster.
