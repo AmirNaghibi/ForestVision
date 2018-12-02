@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Fab from '@material-ui/core/Fab';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import {toggleForm } from '../action/formAction';
+import Button from '@material-ui/core/Button';
 
 import {connect} from 'react-redux';
 
@@ -21,17 +21,17 @@ class Form extends Component {
             <div className="form">
                 <form className="buttons-form">
                     <div className="button-container-left">
-                        <Fab variant="extended" aria-label="Delete" >
+                        <Button variant="contained" aria-label="Delete" size="large" >
                             <NavigationIcon/>
-                            Share Location
-                        </Fab>
+                            {" "}Share Location
+                        </Button>
                     </div>
 
                     <div className="button-container-right" onClick={() => this.props.toggleForm()}>
-                        <Fab variant="extended" aria-label="Delete" >
+                        <Button variant="contained" aria-label="Delete" size="large" >
                             <CloudUploadIcon/>
-                            Upload Images
-                        </Fab>
+                            {" "}Upload Images
+                        </Button>
                     </div>
                 </form>
             </div>

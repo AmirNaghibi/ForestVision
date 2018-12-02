@@ -3,9 +3,6 @@ import GoogleMapReact from 'google-map-react';
 import TwitterMarker from './TwitterMarker';
 import points from '../points';
 
-const AnyReactComponent = ({ children }) => <div>{children}</div>;
-
-
 class Map extends Component {
     static defaultProps = {
         center: {
