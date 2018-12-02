@@ -41,6 +41,7 @@ class Map extends Component {
                         text={'We are here!'}
                     />
                 </GoogleMapReact>
+                
             </div>
         );
     }

@@ -33,6 +33,9 @@ body{
 .map-container {
     height: 85vh;
     width: 80%;
+    border: 1px solid black;
+    margin-right: 5px;
+    border-radius: 6px 6px;
 }
 
 .buttons-form > div{

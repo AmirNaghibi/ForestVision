@@ -14,6 +14,7 @@ class FormModal extends Component{
             acceptedFiles : [],
             rejectedFiles: [],
             fileNames: [],
+            page: 1,
         }
     }
 
