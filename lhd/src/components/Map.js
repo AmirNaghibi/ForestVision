@@ -9,10 +9,10 @@ const AnyReactComponent = ({ children }) => <div>{children}</div>;
 class Map extends Component {
     static defaultProps = {
         center: {
-            lat: 48.7787,
-            lng: -123.7079
+            lat: 49.568000,
+            lng: -121.438000
         },
-        zoom: 9
+        zoom: 7
     };
 
     render() {
@@ -37,13 +37,23 @@ class Map extends Component {
                     }}
                 >
                     <TwitterMarker
-                        lat={48.7787}
-                        lng={-123.7079}
+                        lat={48.7890}
+                        lng={-123.7330}
                         tweetId="1068554525848391681"
+                    />
+                    <TwitterMarker
+                        lat={49.568000}
+                        lng={-121.438000}
+                        tweetId="1065968443306987520"
+                    />
+                    <TwitterMarker
+                        lat={49.405000}
+                        lng={-117.644000}
+                        tweetId="1050857692963565569"
                     />
 
                 </GoogleMapReact>
-                
+
             </div>
         );
     }

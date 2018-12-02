@@ -36,7 +36,7 @@ class TwitterMarker extends Component {
                     open={this.state.open}
                     onClose={this.handleClose}
                 >
-                    <div  className="modal-div">
+                    <div className="modal-div-twit">
                         <TwitterTweetEmbed tweetId={tweetId} />
                     </div>
                 </Modal>

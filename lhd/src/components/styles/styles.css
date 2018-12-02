@@ -27,11 +27,12 @@ body{
 }
 
 .form-container {
+    height: 87vh;
     width: 20%;
 }
 
 .map-container {
-    height: 85vh;
+    height: 87vh;
     width: 80%;
     border: 1px solid black;
     margin-right: 5px;
@@ -60,11 +61,23 @@ body{
     text-align: center;
     border-radius: 7px 7px;
     box-shadow: 2px 2px 2px #6b0a3a;
-  }
+}
 
-  .image-drop-div{
-      margin: 20px auto;
-  }
+.modal-div-twit {
+    width: max-content;
+    background-color: #f3f3f3;
+    border: 2px solid red;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px 7px;
+    box-shadow: 2px 2px 2px #6b0a3a;
+}
+
+.image-drop-div {
+    margin: 20px auto;
+}
+
 .button-container-right {
     position: absolute;
     bottom: 0;
