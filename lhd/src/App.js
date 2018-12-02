@@ -10,14 +10,14 @@ class App extends Component{
     render (){
         return (
             <div>
-            <div className="header">
-                <img src={logo} alt="logo" style={{height: "60px"}}/>
-            </div>
-                <div className="main-app">
-                    <Map />
-                    <Form/>
-                    <Modal/>
-            </div>
+                <div className="header">
+                    <img src={logo} alt="logo" style={{height: "60px"}}/>
+                </div>
+                    <div className="main-app">
+                        <Map />
+                        <Form/>
+                        <Modal/>
+                </div>
             </div>
         )
     }

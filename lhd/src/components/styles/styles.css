@@ -4,26 +4,18 @@ body{
 }
 
 .form{
-    background-color: -webkit-linear-gradient(left, rgba(206,3,50,1) 0%, rgba(171,3,42,1) 44%, rgba(128,0,30,1) 100%);
-    background: rgba(206,3,50,1);
-    background: -moz-linear-gradient(left, rgba(206,3,50,1) 0%, rgba(171,3,42,1) 44%, rgba(128,0,30,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(206,3,50,1)), color-stop(44%, rgba(171,3,42,1)), color-stop(100%, rgba(128,0,30,1)));
-    background: -webkit-linear-gradient(left, rgba(206,3,50,1) 0%, rgba(171,3,42,1) 44%, rgba(128,0,30,1) 100%);
-    background: -o-linear-gradient(left, rgba(206,3,50,1) 0%, rgba(171,3,42,1) 44%, rgba(128,0,30,1) 100%);
-    background: -ms-linear-gradient(left, rgba(206,3,50,1) 0%, rgba(171,3,42,1) 44%, rgba(128,0,30,1) 100%);
-    background: linear-gradient(to right, rgba(206,3,50,1) 0%, rgba(171,3,42,1) 44%, rgba(128,0,30,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce0332', endColorstr='#80001e', GradientType=1 );
-
+    background: linear-gradient(45deg, #7d84b2 0%, #78ffd6 100%);
+    opacity: 0.6;
     position: relative;
     float: right;
     height: 100%;
     width: 100%;
-    border: 2px solid black;
-    border-radius: 6px 6px;
 }
 
 .header {
+    background: cornflowerblue;
     height: 10vh;
+    opacity: 0.8;
 }
 
 .form-container {
@@ -34,9 +26,7 @@ body{
 .map-container {
     height: 87vh;
     width: 80%;
-    border: 1px solid black;
-    margin-right: 5px;
-    border-radius: 6px 6px;
+    border-radius: 0;
 }
 
 .buttons-form {
@@ -93,6 +83,7 @@ body{
 .MuiButton-sizeLarge-36 {
     height: 45%;
     opacity: 0.7;
+    background: #4F628E;
 }
 
 .button-container-left > .MuiButton-sizeLarge-36 {
