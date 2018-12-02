@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import TwitterMarker from './TwitterMarker';
 import points from '../points';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ children }) => <div>{children}</div>;
 
 
 class Map extends Component {
     static defaultProps = {
         center: {
-            lat: 49.2606,
-            lng: -123.2460
+            lat: 48.7787,
+            lng: -123.7079
         },
-        zoom: 11
+        zoom: 9
     };
 
     render() {
@@ -35,11 +36,12 @@ class Map extends Component {
                         heatmap.set('radius', 30);
                     }}
                 >
-                    <AnyReactComponent
-                        lat={49.2606}
-                        lng={-123.2460}
-                        text={'We are here!'}
+                    <TwitterMarker
+                        lat={48.7787}
+                        lng={-123.7079}
+                        tweetId="1068554525848391681"
                     />
+
                 </GoogleMapReact>
                 
             </div>
